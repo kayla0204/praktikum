@@ -18,8 +18,16 @@ use App\Http\Controllers\HomeController;
 Route::get('/list', function () {
     return view('list_siswa');
 });
+Route::get('/form', function () {
+    return view('form');
+});
+
 
 
 Route::get('/home', [HomeController::class,'index'])->name('home');
 Route::get('/biodata', [BioController::class, 'index'])->name('biodata');
 Route::get('/list', [BiodataController::class, 'index'])->name('list');
+Route::get('/form', [BiodataController::class, 'create'])->name('form');
+Route::get('/store_siswa', [BiodataController::class, 'store']);
+
+Route::get('/post', [PostController::class, 'index']);

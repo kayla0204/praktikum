@@ -8,7 +8,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <img src="{{ $photo }}" class="rounded-circle" width="80%">
+            <img src="{{ $photo }}" class="rounded-circle" width="100%" height="80%">
           </div>
           <div class="col-md-6">
             Informasi Pribadi

@@ -31,11 +31,14 @@
         <button type="button" class="btn btn-warning">edit</button>
         <button type="button" class="btn btn-danger">delete</button>
         <button type="button" class="btn btn-primary">lihat</button>
+
     </td>
     </tr>
     @endforeach
+
   </tbody>
 </table>
+<a href="/form"><button type="button" class="btn btn-primary">add new</button></a>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -26,7 +26,12 @@ class BiodataController extends Controller
      */
     public function create()
     {
-        //
+        $data=[
+            'tittle'=>'tambah siswa',
+            // 'route' => route('biodata.store'),
+        ];
+        return view('form', $data);
+
     }
 
     /**
@@ -37,7 +42,19 @@ class BiodataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $bio = new biodata;
+        $bio->nama = $request->nama;
+        $bio->lahir = $request->lahir;
+        $bio->tgl= $request->tgl;
+        $bio->jk = $request->jk;
+        $bio->hobi = $request->hobi;
+        $bio->agama = $request->agama;
+        $bio->alamat = $request->alamat;
+        $bio->telp = $request->tlp;
+        $bio->email = $request->email;
+
+        $bio->save();
+        return redirect()-route('list');
     }
 
     /**
