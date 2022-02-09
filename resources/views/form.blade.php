@@ -16,7 +16,7 @@
         <div class="container">
             <h1 class"display-4 mt-3">Tambah Data</h1>
             <p class="lead" class="mb-3"></p>
-            <form method="POST" action="store">
+            <form method="POST" action="/store_siswa">
                 @csrf
 
                   <div class="form-group">
@@ -69,10 +69,7 @@
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputState">Email</label>
-                    <select id="inputState" class="form-control" name="email">
-                      <option selected></option>
-                      <option></option>
-                    </select>
+                    <input type="email" name="email" class="form-control" id="inputCity">
                   </div>
                 </div>
                 <div class="form-group">

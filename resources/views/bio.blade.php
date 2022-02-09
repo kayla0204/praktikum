@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Dashboard Aplikasi</title>
+    <title>Hello, world!</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,16 +36,7 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
             </ul>
-                <div>Hi, {{ Auth::user() ->name }}</div> <a button href="{{ route ('logout') }}"
-                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                class="btn btn-danger">logout</a>
-                <form id="logout-form" action=" {{ route('logout') }} "method="POST" class="d-none">
-                    @csrf
-            </form>
           </div>
         </div>
       </nav>
@@ -58,7 +49,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <img src="{{ $photo }}" class="rounded-circle" width="100%" height="80%">
+            <img src="" class="rounded-circle" width="80%">
           </div>
           <div class="col-md-6">
             Informasi Pribadi
@@ -69,35 +60,35 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-md-6">Nama Lengkap</div>
-                    <div class="col-md-6">: {{ $nama }}</div>
+                    <div class="col-md-6">: {{ $bio->nama }}</div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">Tempat, Tanggal Lahir</div>
-                    <div class="col-md-6">: {{ $lahir }}</div>
+                    <div class="col-md-6">: {{ $bio->lahir }}</div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">Hobby</div>
-                    <div class="col-md-6">: {{ $hobi }}</div>
+                    <div class="col-md-6">: {{ $bio->hobi }}</div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">Jenis Kelamin</div>
-                    <div class="col-md-6">: {{ $jk }}</div>
+                    <div class="col-md-6">: {{ $bio->jk }}</div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">Agama</div>
-                    <div class="col-md-6">: {{ $agama }}</div>
+                    <div class="col-md-6">: {{ $bio->agama }}</div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">Alamat</div>
-                    <div class="col-md-6">: {{ $alamat }}</div>
+                    <div class="col-md-6">: {{ $bio->alamat }}</div>
                  </div>
                   <div class="row">
                      <div class="col-md-6">Telp</div>
-                     <div class="col-md-6">: {{ $telp }}</div>
+                     <div class="col-md-6">: {{ $bio->telp }}</div>
                   </div>
                   <div class="row">
                     <div class="col-md-6">Email</div>
-                    <div class="col-md-6">: {{ $email }}</div>
+                    <div class="col-md-6">: {{ $bio->email }}</div>
                  </div>
                 </div>
               </div>
@@ -106,18 +97,18 @@
             Riwayat Pendidikan
             <div class="list-group">
                 <div class="list-group-item list-group-item-action">
-                  <h5 class="mb-1">Universitas Pendidikan Indonesia</h5>
-                  <p class="mb-1">Pendidikan Guru Sekolah Dasar</p>
-                  <small>2022 - 2025</small>
+                  <h5 class="mb-1">Universitas Komputer Indonesia</h5>
+                  <p class="mb-1">Sistem Informasi</p>
+                  <small>2021 - 2005</small>
                 </div>
                 <div class="list-group-item list-group-item-action">
-                  <h5 class="mb-1">SMK Bakti Nusantara</h5>
-                  <p class="mb-1">Rekayasa Perangkat Lunak</p>
-                  <small>2019 - 2022</small>
+                  <h5 class="mb-1">SMA Negeri 2 Cimahi</h5>
+                  <p class="mb-1">Ilmu Pengetahuan Sosial</p>
+                  <small>1998 - 2021</small>
                 </div>
                 <div class="list-group-item list-group-item-action">
-                  <h5 class="mb-1">SMP PGRI Rancaekek</h5>
-                  <small>2017 - 2019</small>
+                  <h5 class="mb-1">SMP Negeri 3 Cimahi</h5>
+                  <small>1995 - 1998</small>
                 </div>
           </div>
         </div>

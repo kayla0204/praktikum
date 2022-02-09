@@ -13,6 +13,14 @@ class BioController extends Controller
      */
     public function index()
     {
+        $data= [
+            'judul' => 'kayla dan putri',
+            'paragraf' =>  'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque temporibus consequuntur officiis est aliquam voluptate '
+        ];
+        return view('home2', $data);
+    }
+    public function biodata()
+    {
         $data=[
             'nama'=>'kayla ayu',
             'lahir'=>'bandung 02 april 2004',
@@ -23,7 +31,7 @@ class BioController extends Controller
             'email'=>'kaylaayu0204@gmail.com',
             'telp'=>'089*******',
             'photo'=>'../images/kayla.jpg'
-            
+
         ];
         return view('biodata',$data);
     }
